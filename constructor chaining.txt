@@ -1,0 +1,38 @@
+namespace Constructor
+{
+    class Addition
+    {
+        public Addition()
+        {
+            Console.WriteLine("parameter less constructor");
+        }
+
+        public Addition(int x, int y)
+        {
+            Console.WriteLine("2 paramenters");
+            Console.WriteLine(x + y);
+        }
+
+        public Addition(int x, int y, int z)
+        {
+            Console.WriteLine("3 parameters");
+            Console.WriteLine(x + y + z);
+        }
+
+        public Addition(int x, double y)
+        {
+            Console.WriteLine("2 parameters with different paramenter");
+            Console.WriteLine(x + y);
+        }
+
+    
+        static void Main(string[] args)
+        {
+            Addition addition = new Addition(10,20,30);
+            Addition additionn = new Addition(10,8);
+            Addition additionnn = new Addition(20,10.4);
+
+            Console.ReadLine();
+        }
+    }
+}
