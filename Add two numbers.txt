@@ -1,0 +1,16 @@
+class Program
+    {
+        static void add()
+        {
+            int a = 1;
+            int d = 5;
+            int e = a + d;
+            Console.WriteLine(e);
+        }
+
+        static void Main(string[] args)
+        {
+            add();
+            Console.ReadLine();
+        }
+    }
