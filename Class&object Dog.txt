@@ -1,0 +1,40 @@
+class Dog
+    {
+        //Data Member
+        public int eyes = 2;
+        public int legs = 4;
+        public int ears=2;
+
+        //function member
+
+        public void see()
+        {
+            Console.WriteLine("Dog can see with eyes");
+        }
+        public void run()
+        {
+            Console.WriteLine("Dog can run through legs");
+        }
+        public void listen()
+        {
+            Console.WriteLine("Dog can hear through ears");
+        }
+        public void jump()
+        {
+            Console.WriteLine("Dog can jump through legs");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dog dog = new Dog();
+            dog.see();
+            dog.run();
+            dog.listen();
+            dog.jump();
+
+            Console.ReadLine();
+        }
+        
+    }
