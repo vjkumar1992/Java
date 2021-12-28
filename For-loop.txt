@@ -1,0 +1,21 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            //datatype[] arrayname=new datatype[size]
+            int[] demo = new int[5];
+            Console.WriteLine("for loop can store values");
+            for(int i=0;i<demo.Length;i++)
+            {
+                demo[i] = 10 + i;
+            }
+            Console.WriteLine("for loop can retrive the values");
+            for(int i=0;i<demo.Length;i++)
+            {
+                Console.WriteLine(demo[i]);
+            }
+               
+
+            Console.ReadLine();          
+        }
+    }

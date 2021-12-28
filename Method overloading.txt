@@ -1,0 +1,30 @@
+ class Whatsapp
+    {
+         void Pay(int phonepe)
+        {
+            Console.WriteLine("Pay through phonepe");
+        }
+        void Pay(string bank)
+        {
+            Console.WriteLine("pay through bank account");
+        }
+         void Pay(int Gpay,string bank)
+        {
+            Console.WriteLine("Pay through Google pay & bank");
+        } 
+         void Pay(int phonepe,string bank,int gpay)
+        {
+            Console.WriteLine("Pay through phonepe or bank account or google pay");
+        }
+
+        static void Main(string[] args)
+        {
+            Whatsapp wp = new Whatsapp();
+           wp.Pay(500000);
+           wp.Pay("ICICI");
+           wp.Pay(500000, "ICICI");
+           wp.Pay(500000, "ICICI",500000);
+
+            Console.ReadLine();
+        }
+    }

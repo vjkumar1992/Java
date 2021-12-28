@@ -1,0 +1,24 @@
+class A
+    {
+        public virtual void Education()
+        {
+            Console.WriteLine("DO B.Tech");
+        }
+    }
+    class B:A
+    {
+        public override void Education()
+        {
+            Console.WriteLine("DO Hotel management");
+        }
+    }
+    class program
+    { 
+        static void Main(string[] args)
+        {
+            A a = new A();
+            a.Education();
+            Console.ReadLine();
+        }
+        
+    }

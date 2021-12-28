@@ -1,0 +1,31 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("select the car you want to purchase");
+            string car = Console.ReadLine();
+
+            switch(car)
+            {
+                case "MAHAINDRA":
+                    Console.WriteLine("XUV700");
+                    break;
+                case "TATA":
+                    Console.WriteLine("HARRIER");
+                    break;
+                case "MARUTHI SUZUKI":
+                    Console.WriteLine("BREZZA");
+                    break;
+                case "FORD":
+                    Console.WriteLine("ENDOVER");
+                    break;
+                case "BENZ":
+                    Console.WriteLine("GLA SPORT");
+                    break;
+                default:
+                    Console.WriteLine("THE CAR YOU ARE LOOKING FOR IS NOT AVAILABLE");
+                    break;
+            }
+            Console.ReadLine();
+        }
+    }

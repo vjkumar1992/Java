@@ -1,0 +1,26 @@
+ class Program
+    {
+         static void Main(string [] args)
+        {
+            int[,] demo = new int[2,2];
+            demo[0,0] = 10;
+            demo[0,1] = 20;
+            demo[1,0] = 30;
+            demo[1,1] = 40;
+            //demo[2,0] = 50;
+            //demo[2,1] = 60;
+            //demo[2,2] = 70;
+
+            //for (int i=0;i<5;i++)
+            //{
+            //    Console.WriteLine(demo[]);
+            //}
+
+            foreach(int value in demo)
+            {
+                Console.WriteLine(value);
+            }
+            Console.ReadLine();
+        }
+
+    }

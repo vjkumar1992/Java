@@ -1,0 +1,27 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please enter the number");
+            int number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
+            {
+                if (number > 0)
+                {
+                    Console.WriteLine(number + "Number is even");
+                }
+                else
+                {
+                    Console.WriteLine(number + "Number is neither even nor odd");
+                }
+            }
+            else
+            {
+                Console.WriteLine(number+"Number is odd");
+
+            }
+            Console.ReadLine();
+        }
+
+
+    }

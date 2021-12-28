@@ -1,0 +1,46 @@
+public class Game
+    {
+        public int number;
+        public bool flag = true;
+        public string startgame(int n)
+        {
+            if (n == number)
+            {
+                flag = false;
+                return "your Guess is correct";
+               
+            }
+            else if (n > number)
+            {
+                return "Entered number is higher";
+            }
+            else
+            {
+                return "Entred number is lower";
+            }
+        }
+    }
+    class Start
+    { 
+        static void Main(string[] args)
+        {
+            Game g = new Game();
+            Random random = new Random();
+            g.number = random.Next(100);
+            int check = 1;
+            while(check==1)
+            {
+                Console.WriteLine("Enter your Number");
+                int gussednumber = int.Parse(Console.ReadLine());
+                string msg = g.startgame(gussednumber);
+                Console.WriteLine(msg);
+                if(g.flag==false)
+                {
+                    break;
+                }
+                Console.WriteLine("Enter 1 to try again or Enter 2 to quit");
+                check = int.Parse(Console.ReadLine());
+                Console.ReadLine();
+            }
+        }
+    }

@@ -1,0 +1,10 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int score = r.Next(1, 100);
+            Console.WriteLine(score);
+            Console.ReadLine();
+        }
+    }

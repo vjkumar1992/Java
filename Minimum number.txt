@@ -1,0 +1,12 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please enter the 1st number");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter the 2nd number");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Minimum between" + number1 + "and" + number2 + "is" + Math.Min(number1, number2));
+            Console.ReadLine();
+        }
+    }
